@@ -14,4 +14,4 @@ def main(sender_id, cmd, **extends):
 
 @ampalibe.command('/users')
 def main(**extends):
-    print(userModel.list_users())
+    userView.send_list_user(sender_id, userModel.list_users())
